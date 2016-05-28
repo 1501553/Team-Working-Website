@@ -1,0 +1,28 @@
+/* Fake Table Layout */
+header .table {
+	display: table;
+	table-layout: fixed;
+	width: 100vw;
+}
+
+header .row  {
+	display: table-row;
+	height: 2em;
+}
+
+header .cell {
+	display: table-cell;
+	width: 30vw;
+	text-align: center;
+}
+
+header .row1 .cell {
+	background-color: #72A376;
+}
+
+header .row2 .cell {
+	background-color: #B0CCB0;
+	border: 5px solid #72A376;
+}
+
+header span { width:100%; }

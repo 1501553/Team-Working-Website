@@ -1,0 +1,36 @@
+body {
+	font-family: Open Sans, Verdana, Arial, sans-serif;
+	overflow: visible;
+}
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: .75em 0;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: .83em 0;
+	text-align: center;
+}
+
+p {
+	margin: 1em;
+}
+
+a {
+	color: #000;
+}
+a:hover {
+	color: #72A376;
+}
+
+/*
+darker green	#72A376
+lighter green	#B0CCB0
+*/
