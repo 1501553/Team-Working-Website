@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/general.css">
 		<link rel="stylesheet" href="style.css">
-		</head>
+		<script src="script.js" type="text/javascript"></script>
+	</head>
 	<body>
 		<header>
 			<!-- Fake Table Layout -->
@@ -35,50 +36,91 @@
 				<img src="http://placehold.it/400/72A376/B0CCB0?text=Sample+Image" class="image">
 			</section>
 			<section id="description">
-				<h3>Product Details</h3>
+				<h3>Description</h3>
 				<ul>
-					<li>Name: Product Name</li>
-					<li>Price: Product Price</li>
-					<li>Specifications: Product Specifications</li>
-					<li>Description: Product Description</li>
+					<li><span id="product">Javascript: The Definitive Guide</span></li>
+					<li>Price: £<span id="price">3.99</span></li>
+					<li>Paperback</li>
+					<li>417 Pages</li>
+					<li>Dimensions: 17.8 x 1 x 23.3 cm</li>
+					<li>A well written programmers guide to JavaScript and an
+					extensive reference book.</li>
+					<li>Amount in stock: <span id="stock"></span></li>
+					
 				</ul>
-				<br><br>
-				<button>Stock Check</button>
+				<button onclick="stockCheck()">Stock Check</button>
 			</section>
 			<section id="order">
 				<h3>Order Form</h3>
-				<ul>
-					<li>Forename - <input type="text"></li>
-					<li>Surname - <input type="text"></li>
-					<li>Email - <input type="email"></li>
-					<li>Address Line 1 - <input type="text"></li>
-					<li>Town - <input type="text"></li>
-					<li>Amount - <input type="number"></li>
-				</ul>
-				<br>
-				<button>Order Product</button>
+				<div id="tables">
+					<table><caption>Billing Information</caption>
+						<tr>
+							<th>Forename</th>
+							<td><input type="text" id="forename"></td>
+						</tr>
+						<tr>
+							<th>Surname</th>
+							<td><input type="text" id="surname"></td>
+						</tr>
+						<tr>
+							<th>Email</th>
+							<td><input type="email"></td>
+						</tr>
+						<tr>
+							<th>Amount</th>
+							<td><input type="number" value="0" id="amount"></td>
+						</tr>
+						<tr>
+							<th>Address</th>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>City</th>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>Postcode</th>
+							<td><input type="text"></td>
+						</tr>
+					</table>
+					<table><caption>Card Details</caption>
+						<tr>
+							<th>Card Number</th>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>Expiration Date</th>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>Company</th>
+							<td><input type="text"></td>
+						</tr>
+					</table>
+				</div>
+				<button onclick="orderProduct()">Order Product</button>
 			</section>
 			<section id="reviewBox">
 				<h3>Reviews</h3>
-				<div class="review">
+				<p class="review">
 					Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Non, ipsum, dolore, tempore, dolorem eum sunt
 					doloribus libero ipsa eos vitae animi sequi aliquam
 					perspiciatis nulla omnis quo nemo reprehenderit culpa.
-				</div>
-				<div class="review">
+				</p>
+				<p class="review">
 					Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. At, natus a debitis illum dignissimos magnam
 					veniam corporis quidem voluptatibus quos voluptates
 					deserunt dolore quod quis aspernatur atque repellat
 					necessitatibus minus.
-				</div>
-				<div class="review">
+				</p>
+				<p class="review">
 					Lorem ipsum dolor sit amet, consectetur adipisicing
 					elit. Assumenda, quaerat sint commodi ut tempora soluta
 					deserunt illo totam doloremque sit! Expedita, sed fuga
 					sint nam tempore voluptates porro molestiae facilis?
-				</div>
+				</p>
 			</section>
 		</article>		
 		<script src="script.js"></script>

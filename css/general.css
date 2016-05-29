@@ -21,6 +21,7 @@ h3 {
 
 p {
 	margin: 1em;
+	line-height: 1.25em;
 }
 
 a {
@@ -28,6 +29,10 @@ a {
 }
 a:hover {
 	color: #72A376;
+}
+
+caption {
+	padding-bottom: 1em;
 }
 
 /*

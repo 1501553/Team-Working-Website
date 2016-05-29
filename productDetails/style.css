@@ -28,3 +28,25 @@ li {
 .review {
 	margin: 2em 1em;
 }
+
+#order table {
+	display: inline-table;
+	margin: .5em;
+}
+
+th, td {
+	padding: 2px;
+}
+
+#tables {
+	display: block;
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+caption {
+	padding-bottom: 1em;
+}
