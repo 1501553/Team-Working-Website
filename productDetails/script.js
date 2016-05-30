@@ -20,11 +20,13 @@ function orderProduct() {
 function stockCheck() {
 	var stockAmount, timeout;
 	
-	// Simulate check
-	alert("Amount Loading...");
-	timeout = window.setTimeout(function(){}, 2000);
-	
-	// Display Amount
-	stockAmount = Math.floor(Math.random() * 10) + 1;
-	document.getElementById("stock").innerHTML = stockAmount;
+	if (document.getElementById("stock").innerHTML !== "") {
+		// Simulate check
+		alert("Amount Loading...");
+		timeout = window.setTimeout(function(){}, 2000);
+		
+		// Display Amount
+		stockAmount = Math.floor(Math.random() * 10) + 1;
+		document.getElementById("stock").innerHTML = stockAmount;
+	}
 }
