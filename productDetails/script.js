@@ -19,8 +19,10 @@ function orderProduct() {
 
 function stockCheck() {
 	var stockAmount, timeout;
+	var executed = false;
 	
-	if (document.getElementById("stock").innerHTML !== "") {
+	if (!executed) {
+		executed = true;
 		// Simulate check
 		alert("Amount Loading...");
 		timeout = window.setTimeout(function(){}, 2000);
