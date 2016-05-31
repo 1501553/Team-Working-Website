@@ -19,16 +19,14 @@ function orderProduct() {
 
 function stockCheck() {
 	var stockAmount, timeout;
-	var executed = false;
+	// Simulate check
+	alert("Amount Loading...");
+	timeout = window.setTimeout(function(){}, 2000);
 	
-	if (!executed) {
-		executed = true;
-		// Simulate check
-		alert("Amount Loading...");
-		timeout = window.setTimeout(function(){}, 2000);
-		
-		// Display Amount
-		stockAmount = Math.floor(Math.random() * 10) + 1;
-		document.getElementById("stock").innerHTML = stockAmount;
-	}
+	// Display Amount
+	stockAmount = Math.floor(Math.random() * 10) + 1;
+	document.getElementById("stock").innerHTML = stockAmount;
+	
+	// Disable the button after use
+	document.getElementById("check").setAttribute("disabled", "disabled");
 }
