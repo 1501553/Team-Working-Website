@@ -8,7 +8,7 @@ function orderProduct() {
 	var price = parseFloat(document.getElementById("price").innerHTML);
 	var product = (document.getElementById("product").innerHTML);
 	var totalPrice = orderAmount * price;
-	var fullName = forename + "  " + surname;
+	var fullName = forename + " " + surname;
 	
 	// Input validation
 	if (forename == "" || surname == "") {
