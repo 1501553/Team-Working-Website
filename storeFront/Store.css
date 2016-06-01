@@ -1,0 +1,16 @@
+.pic {
+	float: left;
+	width: 200px;
+	height: 200px;
+	padding: 80px;
+	flex-basis: 20%;
+}
+
+#wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	width: 100vw;
+}
