@@ -11,8 +11,8 @@ function orderProduct() {
 	var fullName = forename + "  " + surname;
 	
 	// Input validation
- if (forename == "" || surname == "") {
-	alert("Please enter your name.");
+	if (forename == "" || surname == "") {
+		alert("Please enter your name.");
 	} else {
 		if (totalPrice == 0) {
 			alert("Please enter an amount to order.");
@@ -24,7 +24,6 @@ function orderProduct() {
 			alert(orderMessage);
 		}
 	}
-	
 }
 
 function stockCheck() {
