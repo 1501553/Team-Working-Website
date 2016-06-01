@@ -10,11 +10,21 @@ function orderProduct() {
 	var totalPrice = orderAmount * price;
 	var fullName = forename + "  " + surname;
 	
-	// Create order
-	orderMessage = fullName + " your order of " + orderAmount + " \"" + product + "\" will cost £" + totalPrice + ".";
+	// Input validation
+ if (forename == "" || surname == "") {
+	alert("Please enter your name.");
+	} else {
+		if (totalPrice == 0) {
+			alert("Please enter an amount to order.");
+		} else {
+			// Create order
+			orderMessage = fullName + " your order of " + orderAmount + " \"" + product + "\" will cost £" + totalPrice + ".";
+			
+			// Display order
+			alert(orderMessage);
+		}
+	}
 	
-	// Display order
-	alert(orderMessage);
 }
 
 function stockCheck() {
